@@ -1,0 +1,24 @@
+  int n, kol;
+            Console.WriteLine("Ввелите количество элементов");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Элементы");
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            kol = 0;
+            int[] arr1 = new int[n];
+            Console.WriteLine(" ");
+            for (int i = 0; i < n; i++)
+            {
+                if (arr[i] > 0)
+                {
+                    arr1[i] = arr[i];
+                    Console.WriteLine(arr1[i] + " ");
+                    kol++;
+                }
+            }
+            if (kol == 0)
+                Console.WriteLine("Таких элементов нету");
+            Console.ReadKey();
